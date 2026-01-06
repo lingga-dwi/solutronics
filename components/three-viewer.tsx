@@ -134,11 +134,7 @@ export function InlineViewer({
           <div className="text-xs text-muted-foreground">
             Host yang diizinkan: {allowedHosts.join(", ")}
           </div>
-        ) : (
-          <div className="text-xs text-muted-foreground">
-            Mode aman: default pakai model lokal. (URL eksternal boleh, tapi sebaiknya pakai host milikmu sendiri.)
-          </div>
-        )}
+        ) : null}
       </div>
 
       <div className="w-full" style={{ height }}>
