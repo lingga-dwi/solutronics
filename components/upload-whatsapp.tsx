@@ -12,6 +12,7 @@ const WA_NUMBER = "6285805908809" // nomor WhatsApp Solutronics
 export function UploadWhatsapp() {
   const [nama, setNama] = useState("")
   const [material, setMaterial] = useState("PLA")
+  const [jumlah, setJumlah] = useState<number | "">("")
   const [catatan, setCatatan] = useState("")
   const [fileName, setFileName] = useState("")
 
@@ -20,6 +21,7 @@ export function UploadWhatsapp() {
       `Halo Solutronics,%0A` +
       `Nama: ${nama || "-"}%0A` +
       `Material: ${material}%0A` +
+      `Jumlah: ${jumlah || "-"}%0A` +
       `File: ${fileName || "-"}%0A` +
       `Catatan: ${catatan || "-"}`
     const url = `https://wa.me/${WA_NUMBER}?text=${msg}`
@@ -60,9 +62,17 @@ export function UploadWhatsapp() {
           accept=".stl,.obj,.zip"
           onChange={(e) => setFileName(e.target.files?.[0]?.name || "")}
         />
-        <p className="text-xs text-muted-foreground">
-          File tidak diunggah ke server. Nama file akan disertakan otomatis di chat WhatsApp.
-        </p>
+      </div>
+      <div className="space-y-2">
+        <Label htmlFor="jumlah">Jumlah</Label>
+        <Input
+          id="jumlah"
+          type="number"
+          min={1}
+          value={jumlah}
+          onChange={(e) => setJumlah(e.target.value ? Number(e.target.value) : "")}
+          placeholder="Jumlah cetak"
+        />
       </div>
       <div className="space-y-2">
         <Label htmlFor="catatan">Catatan</Label>
