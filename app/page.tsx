@@ -139,21 +139,14 @@ export default function Home() {
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold text-primary">Tentang Kami</h2>
             <p className="text-muted-foreground">
-              Kami bantu Anda mencetak 3D dengan cepat, rapi, dan harga jelas. Estimasi transparan, pemesanan langsung
-              via WhatsApp, plus bukti kualitas melalui portofolio & QC foto/video.
+              Solutronics adalah layanan 3D printing profesional dengan produksi in-house, fokus pada hasil presisi, proses jelas, kualitas yang bisa diverifikasi dan berlokasi di Pekanbaru.
             </p>
-            <ul className="list-disc pl-6 text-muted-foreground space-y-1">
-              <li>Estimasi & tabel harga sederhana sejak awal.</li>
-              <li>Form pemesanan terhubung otomatis ke WhatsApp.</li>
-              <li>Portofolio nyata dan QC foto/video sebagai bukti hasil.</li>
-              <li>FAQ, konsultasi gratis, dan opsi bantuan desain.</li>
-            </ul>
             <div className="space-y-2">
-              <p className="font-semibold text-primary">Fitur Utama:</p>
+              <p className="font-semibold text-primary">Kenapa Pilih Solutronics:</p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-1">
-                <li>3D Printing single & multi color dengan QC foto/video.</li>
-                <li>Kalkulator estimasi & tabel harga transparan.</li>
-                <li>Pemesanan mudah via WhatsApp dengan upload file.</li>
+                <li>Estimasi dan tabel harga transparan sejak awal, tanpa biaya tersembunyi.</li>
+                <li>Pemesanan mudah via WhatsApp dengan upload file langsung.</li>
+                <li>Produksi in-house dengan QC foto/video sebagai bukti kualitas.</li>
                 <li>Bantuan desain/revisi file serta konsultasi gratis.</li>
               </ul>
             </div>
