@@ -87,7 +87,7 @@ export default function Layanan3DPage() {
           </ol>
           <div className="pt-2">
             <Button variant="secondary" asChild>
-              <Link href="/harga">Lihat Harga</Link>
+              <Link href="/#harga">Lihat Harga</Link>
             </Button>
           </div>
         </div>

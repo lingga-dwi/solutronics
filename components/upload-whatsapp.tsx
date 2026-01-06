@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/textarea" // gunakan Textarea lokal
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-const WA_NUMBER = "6281234567890" // TODO: ganti ke nomor Solutronics agar langsung terhubung
+const WA_NUMBER = "6285805908809" // nomor WhatsApp Solutronics
 
 export function UploadWhatsapp() {
   const [nama, setNama] = useState("")

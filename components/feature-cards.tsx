@@ -3,29 +3,29 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 const items = [
   {
     title: "Informasi & Edukasi",
-    body: "Company profile, keunggulan, bahan & karakter.",
+    body: "Profil singkat, bahan tersedia, dan tips memilih material.",
   },
   {
     title: "Harga Transparan",
-    body: "Tabel harga + kalkulator estimasi sederhana.",
+    body: "Tabel harga dan kalkulator agar biaya jelas sejak awal.",
   },
   {
     title: "Pemesanan Praktis",
-    body: "Upload file 3D, form pesanan terhubung WhatsApp.",
+    body: "Upload file 3D; form pesanan otomatis membuka WhatsApp.",
   },
   {
     title: "Kepercayaan Pengguna",
-    body: "Portofolio, testimoni, dan QC foto/video.",
+    body: "Portofolio nyata, testimoni, dan QC foto/video.",
   },
   {
     title: "Dukungan Layanan",
-    body: "FAQ, konsultasi gratis, opsi bantuan desain.",
+    body: "FAQ, konsultasi gratis, bantuan desain & revisi file.",
   },
 ]
 
 export function FeatureCards() {
   return (
-    <div className="grid gap-4 md:grid-cols-3">
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
       {items.map((it) => (
         <Card key={it.title} className="bg-card">
           <CardHeader>
