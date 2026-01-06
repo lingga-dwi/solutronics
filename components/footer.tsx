@@ -1,8 +1,9 @@
 export function Footer() {
   return (
-    <footer className="bg-indigo-600 text-white">
+    <footer className="bg-[#4a5180] text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 space-y-10">
         <div className="grid gap-10 md:grid-cols-4">
+          {/* Brand */}
           <div className="space-y-3">
             <img
               src="/branding/solutronics-logo.png"
@@ -14,6 +15,7 @@ export function Footer() {
             </p>
           </div>
 
+          {/* Quick Links */}
           <div className="space-y-3">
             <div className="text-base font-semibold">Tautan Cepat</div>
             <ul className="space-y-2 text-sm text-white/80">
@@ -24,6 +26,7 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Services */}
           <div className="space-y-3">
             <div className="text-base font-semibold">Layanan</div>
             <ul className="space-y-2 text-sm text-white/80">
@@ -34,6 +37,7 @@ export function Footer() {
             </ul>
           </div>
 
+          {/* Contact */}
           <div className="space-y-3">
             <div className="text-base font-semibold">Kontak</div>
             <ul className="space-y-2 text-sm text-white/80">
@@ -42,9 +46,9 @@ export function Footer() {
               <li>
                 <a
                   href="https://wa.me/6285805908809"
-                  className="hover:text-white underline"
                   target="_blank"
                   rel="noreferrer"
+                  className="underline hover:text-white"
                 >
                   Chat cepat via WhatsApp
                 </a>
